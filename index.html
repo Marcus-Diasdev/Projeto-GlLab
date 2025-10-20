@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+        <title>GlLab</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="form-check form-switch top-right">
+            <input class="form-check-input top-right" type="checkbox" role="switch" id="switchCheckDefault">
+            <label class="form-check-label top-right" for="switchCheckDefault">Escuro</label>
+        </div>
+        <h1>Bem-vindo ao GILab: Gestão Inteligente de Laboratórios.</h1>
+        <br \>
+        <p>Esta é a nova plataforma para agendamento dos laboratórios de informática da Unifatec. Aqui você pode verificar a disponibilidade em tempo real e reservar um laboratório para suas aulas de forma rápida e intuitiva. Otimize seu tempo e garanta os recursos para sua turma com apenas alguns cliques.</p>
+        <div class="login" id="login-div">
+            <input type="text" id="login" placeholder="E-mail">
+            <input type="text" id="senha" placeholder="Senha">
+            <div class="button-login">
+                <button onclick="logar()" id="button-login" class="button-blue">Login</button>
+                <button onclick="cadastrar()" id="button-cadastrar" class="button-gray">Cadastrar</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
