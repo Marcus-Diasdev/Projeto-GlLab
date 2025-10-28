@@ -95,3 +95,37 @@ p {
     top: 10px;          
     right: 10px;        
 }
+
+#esqueceu {
+    color:#0078d4;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#esqueceu:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer {
+    color: #005a9c;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+footer a {
+    color: #005a9c; 
+    padding: 0%; 
+    width: 100%;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+footer a:hover {
+  color: #1073b9;
+  font-size: 1.21rem;
+}

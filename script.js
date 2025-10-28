@@ -1,5 +1,6 @@
 const json = './dados.json';
 const switchDoTema = document.getElementById('switchCheckDefault');
+const regexEmail = /^[^\s@]+@unifatec\.edu\.(br|us|pt|es)$/;
 
 
 function mudarTema() {
@@ -43,10 +44,9 @@ async function conferirCadastro() {
     let email = document.getElementById('e-mail').value.toLowerCase();
     let senha1 = document.getElementById('senha1').value;
     let senha2 = document.getElementById('senha2').value;
-    const regexEmail = /^[^\s@]+@unifatec\.edu\.(br|us|pt|es)$/;
 
     if (!regexEmail.test(email)) {
-        alert('Digite um e-mail válido!');
+        alert('Digite um e-mail válido! Exemplo:"exemplo@unifatec.edu.br"');
         return;
     }
     if (senha1.length < 8 || senha1.length > 32) {
@@ -93,3 +93,32 @@ function voltar() {
     window.location.reload();
 }
 
+async function logar() {
+    let login = document.getElementById('login').value.toLowerCase();
+    let senha = document.getElementById('senha').value;
+
+    if (!regexEmail.test(login)) {
+        alert('Digite um e-mail válido! Exemplo:"exemplo@unifatec.edu.br"');
+        return;
+    }
+
+    try {
+        const response = await fetch(json);
+        const dados = await response.json();
+        const usuarioEncontrado = dados.find(usuario => usuario.email === login);
+
+        if (!usuarioEncontrado) {
+            alert('E-mail não cadastrado!');
+        } else {
+            if (usuarioEncontrado.senha === senha) {
+                alert('Login realizado com sucesso! Bem-vindo!');
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+
+    } catch (erro) {
+        console.error("Erro ao tentar logar:", erro);
+        alert("Não foi possível processar o login. Tente novamente mais tarde.");
+    }
+}
