@@ -48,12 +48,10 @@ async function conferirCadastro() {
     if (!regexEmail.test(email)) {
         alert('Digite um e-mail válido! Exemplo:"exemplo@unifatec.edu.br"');
         return;
-    }
-    if (senha1.length < 8 || senha1.length > 32) {
+    } else if (senha1.length < 8 || senha1.length > 32) {
         alert('A senha deve ter entre 8 e 32 caracteres!');
         return;
-    }
-    if (senha1 !== senha2) {
+    } else if (senha1 !== senha2) {
         alert('As duas senhas são diferentes!');
         return;
     }
