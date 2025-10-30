@@ -20,15 +20,20 @@
 
         <div class="login" id="recuperar-div">
             <h1>Recuperar Senha</h1>
-            <p style="margin-bottom: 25px;">Digite seu e-mail cadastrado. Se ele estiver em nosso sistema, enviaremos um link para redefinir sua senha.</p>
+            <p>Digite seu e-mail cadastrado. Se ele estiver em nosso sistema, enviaremos um link para redefinir sua senha.</p>
             
-            <input type="email" id="email-recuperacao" placeholder="E-mail" style="margin-bottom: 20px;">
+            <input type="email" id="email-recuperacao" placeholder="E-mail">
             
             <div class="button-login">
                 <button onclick="enviarRecuperacao()" id="button-recuperar" class="button-blue">Enviar link</button>
-                <a href="index.html" class="button-gray" id="button-voltar">Voltar</a>
+                <a href="../index.html" class="button-gray" id="button-voltar">Voltar</a>
             </div>
         </div>
+        <footer>
+
+            Um projeto de <a href="https://www.linkedin.com/in/marcus-dias-63a364221/" target="_blank">Marcus Dias</a>
+    
+        </footer>
 
         <script src="script.js" async defer></script>
     </body>

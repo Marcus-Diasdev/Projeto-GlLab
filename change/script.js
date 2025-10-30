@@ -1,3 +1,4 @@
+const json = '../dados.json';
 const regexEmail = /^[^\s@]+@unifatec\.edu\.(br|us|pt|es)$/;
 
 async function enviarRecuperacao() {
@@ -20,7 +21,7 @@ async function enviarRecuperacao() {
         }
         alert('Se este e-mail estiver em nosso sistema, um link de recuperação foi enviado.');
 
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
 
     } catch (erro) {
         console.error("Erro ao tentar recuperar senha:", erro);
