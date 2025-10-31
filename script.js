@@ -109,7 +109,7 @@ async function logar() {
             alert('E-mail não cadastrado!');
         } else {
             if (usuarioEncontrado.senha === senha) {
-                alert('Login realizado com sucesso! Bem-vindo!');
+                window.location.href = './pagina-inicial/index.html';
             } else {
                 alert('Senha incorreta!');
             }
