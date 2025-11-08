@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script>
@@ -25,8 +26,39 @@
             <input class="form-check-input top-right" type="checkbox" role="switch" id="switchCheckDefault">
             <label class="form-check-label top-right" for="switchCheckDefault"><i class="bi bi-moon-stars"></i></label>
         </div>
-
-        <h1>Faça seu agendamento!</h1>
-        <script src="../script.js" async defer></script>
+        <div class="agendamento-container">
+            <h1>Faça seu agendamento</h1>
+            <p>Selecione o laboratório, data e período desejado.</p>
+    
+            <form onsubmit="event.preventDefault(); agendar();">
+                <label for="laboratorio" class="form-label">Laboratório:</label>
+                <select id="laboratorio" class="form-select" required>
+                    <option value="" disabled selected>Escolha um laboratório...</option>
+                    <option value="Lab 01 (Software)">Lab 01 (Software)</option>
+                    <option value="Lab 02 (Redes)">Lab 02 (Redes)</option>
+                    <option value="Lab 03 (Hardware)">Lab 03 (Hardware)</option>
+                    <option value="Lab 04 (Multimédia)">Lab 04 (Multimédia)</option>
+                </select>
+    
+                <div id="calendario-container" style="display: none; margin-top: 20px;"></div>
+    
+                <label for="data" class="form-label">Data:</label>
+                <input type="date" id="data" class="form-control" required>
+    
+                <label for="periodo" class="form-label">Período:</label>
+                <select id="periodo" class="form-select" required>
+                    <option value="" disabled selected>Escolha um período...</option>
+                    <option value="Manhã">Manhã (08:00 - 12:00)</option>
+                    <option value="Tarde">Tarde (13:00 - 17:00)</option>
+                    <option value="Noite">Noite (18:00 - 22:00)</option>
+                </select>
+    
+                <div class="button-agendamento">
+                    <button type="submit" class="button-blue">Confirmar Agendamento</button>
+                    <a href="../index.html" class="button-gray">Voltar ao Início</a>
+                </div>
+            </form>
+        </div>
+        <script src="script.js" async defer></script>
     </body>
 </html>
