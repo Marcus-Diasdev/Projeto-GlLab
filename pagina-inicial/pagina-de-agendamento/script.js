@@ -1,6 +1,6 @@
 const agendamentosJsonUrl = '../../agendamentos.json';
 const indexUrl = '../../index.html';
-let calendario = null; // Guarda a instância do calendário
+let calendario = null; 
 const calendarioContainer = document.getElementById('calendario-container');
 const labSelect = document.getElementById('laboratorio');
 

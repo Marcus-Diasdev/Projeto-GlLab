@@ -17,6 +17,7 @@
                 }
             })();
         </script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
     </head>
     <body>
         <a href="#" onclick="logout()" class="logout-link">Sair</a>
@@ -34,10 +35,13 @@
                 <label for="laboratorio" class="form-label">Laboratório:</label>
                 <select id="laboratorio" class="form-select" required>
                     <option value="" disabled selected>Escolha um laboratório...</option>
-                    <option value="Lab 01 (Software)">Lab 01 (Software)</option>
+                    <option value="Lab 01 (informática)">Lab 01 (informática)</option>
                     <option value="Lab 02 (Redes)">Lab 02 (Redes)</option>
-                    <option value="Lab 03 (Hardware)">Lab 03 (Hardware)</option>
-                    <option value="Lab 04 (Multimédia)">Lab 04 (Multimédia)</option>
+                    <option value="Lab 03 (Física/Elétrica)">Lab 03 (Física/Elétrica)</option>
+                    <option value="Lab 04 (3D)">Lab 04 (3D)</option>
+                    <option value="Lab 05 (Mecânica)">Lab 05 (Mecânica)</option>
+                    <option value="Lab 06 (Anatomia)">Lab 06 (Anatomia)</option>
+                    <option value="Lab 07 (Semiologia)">Lab 07 (Semiologia)</option>
                 </select>
     
                 <div id="calendario-container" style="display: none; margin-top: 20px;"></div>
