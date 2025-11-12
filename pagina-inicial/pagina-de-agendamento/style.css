@@ -43,3 +43,20 @@
     background-color: #0078d4 !important;
     border-color: #005a9c !important;
 }
+
+.logout-link {
+    position: absolute;
+    top: 10px;      
+    left: 10px;    
+    z-index: 10;   
+    color: #0078d4;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+  }
+  
+  .logout-link:hover {
+    color: aqua;
+    text-decoration: none;
+  }
