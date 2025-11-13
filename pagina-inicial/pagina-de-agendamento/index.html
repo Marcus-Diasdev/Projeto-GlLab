@@ -28,20 +28,22 @@
             <label class="form-check-label top-right" for="switchCheckDefault"><i class="bi bi-moon-stars"></i></label>
         </div>
         <div class="agendamento-container">
-            <h1>Faça seu agendamento</h1>
-            <p>Selecione o laboratório, data e período desejado.</p>
+            <h1 class="titulo">Faça seu agendamento</h1>
+            <p class="texto">Selecione o laboratório, data e período desejado.</p>
     
             <form onsubmit="event.preventDefault(); agendar();">
                 <label for="laboratorio" class="form-label">Laboratório:</label>
                 <select id="laboratorio" class="form-select" required>
                     <option value="" disabled selected>Escolha um laboratório...</option>
-                    <option value="Lab 01 (informática)">Lab 01 (informática)</option>
-                    <option value="Lab 02 (Redes)">Lab 02 (Redes)</option>
-                    <option value="Lab 03 (Física/Elétrica)">Lab 03 (Física/Elétrica)</option>
-                    <option value="Lab 04 (3D)">Lab 04 (3D)</option>
-                    <option value="Lab 05 (Mecânica)">Lab 05 (Mecânica)</option>
-                    <option value="Lab 06 (Anatomia)">Lab 06 (Anatomia)</option>
-                    <option value="Lab 07 (Semiologia)">Lab 07 (Semiologia)</option>
+                    <option value="Lab 01 (informática a)">Lab 01 (informática a)</option>
+                    <option value="Lab 02 (informática b)">Lab 02 (informática b)</option>
+                    <option value="Lab 03 (Redes)">Lab 03 (Redes)</option>
+                    <option value="Lab 04 (Física/Elétrica)">Lab 04 (Física/Elétrica)</option>
+                    <option value="Lab 05 (3D)">Lab 05 (3D)</option>
+                    <option value="Lab 06 (Mecânica)">Lab 06 (Mecânica)</option>
+                    <option value="Lab 07 (Anatomia)">Lab 07 (Anatomia)</option>
+                    <option value="Lab 08 (Semiologia)">Lab 08 (Semiologia)</option>
+                    <option value="Lab 09 (Química)">Lab 09 (Química)</option>
                 </select>
     
                 <div id="calendario-container" style="display: none; margin-top: 20px;"></div>

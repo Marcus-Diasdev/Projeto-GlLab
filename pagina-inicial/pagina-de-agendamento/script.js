@@ -10,6 +10,15 @@ const labSelect = document.getElementById('laboratorio');
         alert('Você precisa estar logado para agendar.');
         window.location.href = indexUrl;
     }
+    const inputData = document.getElementById('data');
+    const hoje = new Date(); 
+    const ano = hoje.getFullYear();
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    
+    const dataDeHojeFormatada = `${ano}-${mes}-${dia}`;
+    
+    inputData.setAttribute('min', dataDeHojeFormatada);
 });
 
 const switchDoTema = document.getElementById('switchCheckDefault');

@@ -17,10 +17,12 @@
 .agendamento-container .form-label {
     margin-top: 15px;
     font-weight: 500;
+    color: black;
 }
 
 .agendamento-container .form-select,
 .agendamento-container .form-control {
+    color: black;
     width: 100%;
     padding: 15px;
     margin-bottom: 5px;

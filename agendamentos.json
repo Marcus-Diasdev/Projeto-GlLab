@@ -4,5 +4,59 @@
     "data": "2025-11-17",
     "periodo": "Manhã",
     "usuario": "exemplo@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-12",
+    "periodo": "Manhã",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-14",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-21",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-28",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-14",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-14",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 01 (informática a)",
+    "data": "2025-11-17",
+    "periodo": "Noite",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 02 (informática b)",
+    "data": "2025-11-14",
+    "periodo": "Manhã",
+    "usuario": "testefinal@unifatec.edu.br"
+  },
+  {
+    "laboratorio": "Lab 08 (Semiologia)",
+    "data": "2025-11-14",
+    "periodo": "Noite",
+    "usuario": "gihad@unifatec.edu.br"
   }
 ]
